@@ -1,0 +1,16 @@
+{
+  "name": "escola",
+  "version": "1.0.0",
+  "description": "School Project",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ruan Mendes Marques <ruanmendesmarques@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ajax": "0.0.4",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1"
+  }
+}
