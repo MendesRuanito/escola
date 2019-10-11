@@ -28,6 +28,7 @@ if(array_key_exists("removido", $_GET) && $_GET["removido"]==true){?>
 
 <div class="table-responsive">
 	<table class="table table-striped table-bordered table-sm align-middle" style="font-size:14px;">
+		<thead class="thead-light">
 			<td bgcolor="#264d00" scope="col">#</th>
 			<td bgcolor="#264d00" scope="col">Nome do Aluno</th>
 			<td bgcolor="#264d00" scope="col">Nascimento</th>
@@ -36,7 +37,8 @@ if(array_key_exists("removido", $_GET) && $_GET["removido"]==true){?>
 			<td bgcolor="#264d00" scope="col">Categoria</th>
 			<td bgcolor="#264d00" scope="col"></th>
 			<td bgcolor="#264d00" scope="col"></th>
-		<?php
+		</thead>
+	<?php
     foreach ($alunos as $aluno):?>
 		<tr>
 			<td class="align-middle"><?=$aluno['id']?></td>
