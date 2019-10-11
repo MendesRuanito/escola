@@ -1,5 +1,5 @@
-<?php require_once("cabecalho.php"); 
-require_once("conecta.php"); 
+<?php require_once("cabecalho.php");
+require_once("conecta.php");
 require_once("banco-aluno.php");
 require_once("logica-usuario.php");
 
@@ -28,7 +28,7 @@ if(array_key_exists("removido", $_GET) && $_GET["removido"]==true){?>
 
 <div class="table-responsive">
 	<table class="table table-striped table-bordered table-sm align-middle" style="font-size:14px;">
-		<thead class="thead-dark">
+		<thead class="thead-light bg-success">
 			<th scope="col">#</th>
 			<th scope="col">Nome do Aluno</th>
 			<th scope="col">Nascimento</th>
@@ -44,9 +44,9 @@ if(array_key_exists("removido", $_GET) && $_GET["removido"]==true){?>
 			<td class="align-middle"><?=$aluno['id']?></td>
 			<td class="align-middle"><?=$aluno['nome']?></td>
 			<td class="align-middle">
-				<?php 
+				<?php
                 $date = date_create($aluno['dataNascimento']);
-                echo date_format($date, 'd/m/Y'); 
+                echo date_format($date, 'd/m/Y');
             ?>
 			</td>
 			<td class="align-middle"><?=$aluno['responsavel']?></td>
