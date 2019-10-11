@@ -15,22 +15,19 @@
 </head>
 
 <body>
-<nav class="navbar navbar-inverse navbar-collapse sticky-top navbar-expand-sm navbar-dark nav-pills bg-dark" >
-		<div class="container">
-	<div class="navbar-brand">
-		<img src="https://newtoncruzoficial.com/wp-content/uploads/2018/08/cropped-book-favicon-512-1.png" width="30" height="30" class="d-inline-   block align-top" alt="" style="margin-top: 8px;">
-		<a class="navbar-brand" href="index.php">Escola Elmano Lauffer Leal</a>
-	</div>
-	<?php if(usuarioEstaLogado()){?>
-	<div class="dropdown navbar-brand">
-		<button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Olá <?=usuarioLogado()?>!
-		</button>
-		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-			<a class="dropdown-item" href="logout.php">Sair</a>
+		<div class="bannerD">
+			<img class="banner" src="img/banner.png" alt="">
 		</div>
-	</div>
-	<?php } ?>
+<nav class="navbar navbar-inverse navbar-collapse sticky-top navbar-expand-sm navbar-dark nav-pills" style="background-color: #25744d;" >
+		<div class="container">
+			<?php if(usuarioEstaLogado()){?>
+				<button class="btn btn-light dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Olá <?=usuarioLogado()?>!
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="logout.php">Sair</a>
+				</div>
+			<?php } ?>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
