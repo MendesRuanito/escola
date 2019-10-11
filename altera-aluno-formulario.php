@@ -1,7 +1,7 @@
 <?php require_once("cabecalho.php");
 require_once("conecta.php");
 require_once("banco-categoria.php");
-require_once("banco-aluno.php"); 
+require_once("banco-aluno.php");
 
 $id = $_POST['id'];
 $aluno = buscaAluno($connection, $id);
