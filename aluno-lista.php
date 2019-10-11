@@ -27,9 +27,9 @@ if(array_key_exists("removido", $_GET) && $_GET["removido"]==true){?>
 }?>
 
 <div class="table-responsive">
-	<table class="table table-striped table-bordered table-sm align-middle" style="font-size:14px;">
+	<table class="table table-striped table-bordered table-hover table-sm align-middle" style="font-size:14px;">
 		<thead class="thead-light">
-			<th scope="col">#</th>
+			<th class="table-success" scope="col">#</th>
 			<th scope="col">Nome do Aluno</th>
 			<th scope="col">Nascimento</th>
 			<th scope="col">Responsável</th>
