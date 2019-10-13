@@ -6,7 +6,7 @@ $usuario = buscaUsuario($connection, $_POST["email"], $_POST["senha"]);
 
 if ($usuario == null) {
     $_SESSION["danger"] = "Usuário Invalido";
-    header("Location: index.php");
+    header("Location: index.php?login=0");
 } else {
     $_SESSION["success"] = "Usuario Logado com Sucesso";
     logaUsuario($usuario["nome"]);

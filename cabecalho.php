@@ -10,13 +10,14 @@
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="node_modules/ajax/lib/ajax.js"></script>
+	<script src="js/modal.js"></script>
 
 	<?php require_once("logica-usuario.php");?>
 
 </head>
 
 <body>
-<img class="banner" src="img/banner1280.png" alt="">
+<img class="banner" src="img/banner1360.png" alt="">
 <nav class="navbar navbar-inverse navbar-collapse sticky-top navbar-expand-sm navbar-dark nav-pills" style="background-color: #25744d;" >
 		<div class="container">
 			<?php if (usuarioEstaLogado()) {?>
@@ -27,7 +28,7 @@
 					<a class="dropdown-item" href="logout.php">Sair</a>
 				</div>
 			<?php } ?>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarTogglerDemo01">

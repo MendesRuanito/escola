@@ -6,10 +6,16 @@ require_once("logica-usuario.php");
 
 <?php
     if (usuarioEstaLogado()) {
-        ?><p class="alert alert-info">Voce está logado como <?=usuarioLogado()?>. <a href="logout.php">Deslogar</a></p><?php
+        ?> <p class="alert alert-info">Voce está logado como <?=usuarioLogado()?>. <a href="logout.php">Deslogar</a></p><?php
     } else {
-        ?>
-
+        if (isset($_GET['login'])) { ?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    Email e/ou Senha incorretos!
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+<?php } ?>
 <h2>Login</h2><br>
 <form action="login.php" method="post">
 	<table class="table">
@@ -17,7 +23,7 @@ require_once("logica-usuario.php");
 			<td>Email</td>
 			<td><input class="form-control" type="email" name="email"></td>
 		</tr>
-		<tr>
+		 <tr>
 			<td>Senha</td>
 			<td><input class="form-control" type="password" name="senha"></td>
 		</tr>
