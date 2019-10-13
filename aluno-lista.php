@@ -7,22 +7,22 @@ verificaUsuario();
 
 $alunos = listaAlunos($connection);
 
-if(array_key_exists("tipo", $_GET) && $_GET["tipo"]!=""){
-	switch($_GET["tipo"]){
-		case 0:
-			break;
-		case 1:
-			 $alunos = pesquisaAlunoNome($connection, $_GET['valor']);
-			break;
-		case 2:
-			 $alunos = pesquisaAlunoNome($connection, $_GET['valor']);
-			break;
-	}
+if (array_key_exists("tipo", $_GET) && $_GET["tipo"]!="") {
+    switch ($_GET["tipo"]) {
+        case 0:
+            break;
+        case 1:
+             $alunos = pesquisaAlunoNome($connection, $_GET['valor']);
+            break;
+        case 2:
+             $alunos = pesquisaAlunoNome($connection, $_GET['valor']);
+            break;
+    }
 }
 
 ?> <h1>Alunos</h1><br> <?php
 
-if(array_key_exists("removido", $_GET) && $_GET["removido"]==true){?>
+if (array_key_exists("removido", $_GET) && $_GET["removido"]==true) {?>
 <p class="alert alert-danger">Aluno excluido</p><?php
 }?>
 
@@ -71,4 +71,4 @@ if(array_key_exists("removido", $_GET) && $_GET["removido"]==true){?>
 
 	</table>
 </div>
-<?php include("rodape.php"); ?>
+<?php require_once("rodape.php"); ?>

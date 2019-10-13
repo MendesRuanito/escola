@@ -4,11 +4,11 @@ require_once("logica-usuario.php");
 
 <h1>Bem Vindo!</h1>
 
-<?php 
-	if(usuarioEstaLogado()){
-		?><p class="alert alert-info">Voce está logado como <?=usuarioLogado()?>. <a href="logout.php">Deslogar</a></p><?php
-	} else {
-?>
+<?php
+    if (usuarioEstaLogado()) {
+        ?><p class="alert alert-info">Voce está logado como <?=usuarioLogado()?>. <a href="logout.php">Deslogar</a></p><?php
+    } else {
+        ?>
 
 <h2>Login</h2><br>
 <form action="login.php" method="post">
@@ -27,6 +27,7 @@ require_once("logica-usuario.php");
 	</table>
 </form>
 
-<?php } ?>
+<?php
+    } ?>
 
-<?php include("rodape.php"); ?>
+<?php require_once("rodape.php"); ?>

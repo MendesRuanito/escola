@@ -45,7 +45,7 @@ $categorias = listaCategoria($connection); ?>
 			<td>Categoria:</td>
 			<td>
 				<select name="categoria" class="form-control">
-					<?php foreach($categorias as $categoria):?>
+					<?php foreach ($categorias as $categoria):?>
 					<option value="<?=$categoria['id']?>"><?=$categoria['nome']?>
 						<?php endforeach ?>
 					</option>
@@ -63,4 +63,4 @@ $categorias = listaCategoria($connection); ?>
 	</table>
 </form>
 
-<?php include("rodape.php"); ?>
+<?php require_once("rodape.php"); ?>

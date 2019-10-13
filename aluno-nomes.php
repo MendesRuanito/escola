@@ -1,8 +1,9 @@
-<?php include("cabecalho.php");
-include("conecta.php");
-include("banco-categoria.php");
-include("banco-aluno.php");
-include("esta-conectado.php");
+<?php require_once("cabecalho.php");
+require_once("conecta.php");
+require_once("banco-categoria.php");
+require_once("banco-aluno.php");
+
+verificaUsuario();
 
 ?>
 <form action="aluno-lista.php" method="get">

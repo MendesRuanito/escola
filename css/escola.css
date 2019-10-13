@@ -1,27 +1,14 @@
 h1 {
-	text-align: center;
-	padding-top: 20px;
+  text-align: center;
+  padding-top: 20px;
 }
 
 body {
-	min-height: 1000px;
-	text-align: center;
-	}
-
-.banner{
-height: auto;
-position: relative;
-text-align: center;
-max-width: 100%;
+  min-height: 1000px;
+  text-align: center;
 }
 
-.bannerD{
-	margin-top:-45px;
-	text-align: center;
-}
-
-footer {
-    position: fixed;
-    bottom:0;
-    left:0;
+.banner {
+	max-width: 100%;
+	min-width: 100%
 }

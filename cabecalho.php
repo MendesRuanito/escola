@@ -3,6 +3,7 @@
 <head>
 	<title>Escola Elmano Lauffer Leal</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="https://newtoncruzoficial.com/wp-content/uploads/2018/08/cropped-book-favicon-512-1.png" sizes="32x32">
 	<link href="css/escola.css" rel="stylesheet">
 	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -15,12 +16,10 @@
 </head>
 
 <body>
-		<div class="bannerD">
-			<img class="banner" src="img/banner.png" alt="">
-		</div>
+<img class="banner" src="img/banner1280.png" alt="">
 <nav class="navbar navbar-inverse navbar-collapse sticky-top navbar-expand-sm navbar-dark nav-pills" style="background-color: #25744d;" >
 		<div class="container">
-			<?php if(usuarioEstaLogado()){?>
+			<?php if (usuarioEstaLogado()) {?>
 				<button class="btn btn-light dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Olá <?=usuarioLogado()?>!
 				</button>
