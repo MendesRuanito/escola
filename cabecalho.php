@@ -24,7 +24,7 @@
 				<button class="btn btn-outline-light dropdown-toggle btn-sm  py-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Olá <?=usuarioLogado()?>!
 				</button>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<div class="dropdown-menu py-0" aria-labelledby="dropdownMenuButton">
 					<a class="dropdown-item" href="logout.php">Sair</a>
 				</div>
 			<?php } ?>
