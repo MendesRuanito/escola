@@ -18,35 +18,39 @@
 
 <body>
 <img class="banner" src="img/banner1360.png" alt="">
-<nav class="navbar navbar-inverse navbar-collapse sticky-top navbar-expand-sm navbar-dark nav-pills" style="background-color: #339966;" >
-		<div class="container">
-			<?php if (usuarioEstaLogado()) {?>
-				<button class="btn btn-outline-light dropdown-toggle btn-sm  py-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Olá <?=usuarioLogado()?>!
-				</button>
-				<div class="dropdown-menu py-0" aria-labelledby="dropdownMenuButton">
+<nav class="navbar navbar-inverse navbar-collapse sticky-top navbar-expand-sm navbar-dark" style="background-color: #339966;" >
+			<div class="container">
+				<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+						<?php if (usuarioEstaLogado()) {?>
+							<button class="btn btn-outline-light dropdown-toggle btn-sm py-0" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Olá <?=usuarioLogado()?>!
+							</button>
+            </li>
+        </ul>
+    </div>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 					<a class="dropdown-item" href="logout.php">Sair</a>
 				</div>
 			<?php } ?>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-		<ul class="nav navbar-nav">
-			<li class="nav-item">
-				<a class="nav-link py-0" href="aluno-formulario.php">Cadastro</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link py-0" href="aluno-lista.php">Lista</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link py-0" href="aluno-busca.php">Busca</a>
-			</li>
-			<div class="d-flex flex-row-reverse bd-highlight">
-
-		</ul>
-	</div>
-	</div>
+			<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+	        <ul class="navbar-nav mr-auto">
+	            <li class="nav-item active">
+	                <a class="nav-link" href="index.php">Inicio</a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link" href="aluno-formulario.php">Cadastro</a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link" href="aluno-busca.php">Pesquisa</a>
+	            </li>
+	        </ul>
+	    </div>
+	    <div class="navbar-brand order-3">
+	        <button class="btn btn-outline-light navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 </div>
 </nav>
 
