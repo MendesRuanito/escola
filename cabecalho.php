@@ -21,38 +21,52 @@
 <nav class="navbar navbar-inverse navbar-collapse sticky-top navbar-expand-sm navbar-dark" style="background-color: #339966;" >
 			<div class="container">
 				<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+											<?php if (usuarioEstaLogado()) {?>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-						<?php if (usuarioEstaLogado()) {?>
-							<button class="btn btn-outline-light dropdown-toggle btn-sm py-0" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<button type="button" class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#modalExemplo" >
 								Olá <?=usuarioLogado()?>!
 							</button>
             </li>
         </ul>
+							<?php } ?>
     </div>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="logout.php">Sair</a>
-				</div>
-			<?php } ?>
 			<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
 	        <ul class="navbar-nav mr-auto">
-	            <li class="nav-item active">
-	                <a class="nav-link" href="index.php">Inicio</a>
+	            <li class="nav-item active ">
+	                <a class="nav-link py-0" href="index.php">Inicio</a>
 	            </li>
 	            <li class="nav-item">
-	                <a class="nav-link" href="aluno-formulario.php">Cadastro</a>
+	                <a class="nav-link py-0" href="aluno-formulario.php">Cadastro</a>
 	            </li>
 	            <li class="nav-item">
-	                <a class="nav-link" href="aluno-busca.php">Pesquisa</a>
+	                <a class="nav-link py-0" href="aluno-busca.php">Pesquisa</a>
 	            </li>
 	        </ul>
 	    </div>
-	    <div class="navbar-brand order-3">
+	    <div class="navbar-brand order-3 py-0">
 	        <button class="btn btn-outline-light navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 </div>
 </nav>
+
+<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Deseja Sair?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+        <a role="button" class="btn btn-primary" href="logout.php">Sim</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 	<div class="container">
 		<div class="principal">

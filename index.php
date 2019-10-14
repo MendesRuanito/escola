@@ -42,6 +42,5 @@ require_once("logica-usuario.php");
 </form>
 
 <?php
-    } ?>
-
-<?php require_once("rodape.php"); ?>
+    }
+require_once("rodape.php"); ?>
