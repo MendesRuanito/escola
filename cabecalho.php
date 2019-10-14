@@ -20,32 +20,39 @@
 <img class="banner" src="img/banner1360.png" alt="">
 <nav class="navbar navbar-inverse navbar-collapse sticky-top navbar-expand-sm navbar-dark" style="background-color: #339966;" >
 			<div class="container">
-				<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-											<?php if (usuarioEstaLogado()) {?>
+				<div class="navbar-collapse collapse order-0 dual-collapse2">
+						<ul class="navbar-nav">
+								<li class="nav-item">
+										<a class="nav-link py-0" href="index.php">Inicio</a>
+								</li>
+								<li class="nav-item">
+										<a class="nav-link py-0" href="aluno-formulario.php">Cadastro</a>
+								</li>
+								<li class="nav-item">
+										<a class="nav-link py-0" href="aluno-busca.php">Pesquisa</a>
+								</li>
+								<li class="nav-item">
+										<a class="nav-link"></a>
+								</li>
+						</ul>
+				</div>
+				<div class="navbar-collapse collapse w-100 order-1 dual-collapse2">
+			<?php if (usuarioEstaLogado()) {?>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
 							<button type="button" class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#modalExemplo" >
 								Olá <?=usuarioLogado()?>!
 							</button>
             </li>
+						<li class="nav-item">
+								<a class="nav-link"></a>
+						</li>
         </ul>
 							<?php } ?>
     </div>
-			<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-	        <ul class="navbar-nav mr-auto">
-	            <li class="nav-item active ">
-	                <a class="nav-link py-0" href="index.php">Inicio</a>
-	            </li>
-	            <li class="nav-item">
-	                <a class="nav-link py-0" href="aluno-formulario.php">Cadastro</a>
-	            </li>
-	            <li class="nav-item">
-	                <a class="nav-link py-0" href="aluno-busca.php">Pesquisa</a>
-	            </li>
-	        </ul>
-	    </div>
-	    <div class="navbar-brand order-3 py-0">
-	        <button class="btn btn-outline-light navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+
+	    <div class="navbar-brand order-3 py-0 ">
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 </div>
