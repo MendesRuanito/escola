@@ -21,7 +21,7 @@
 <nav class="navbar navbar-inverse navbar-collapse sticky-top navbar-expand-sm navbar-dark nav-pills" style="background-color: #339966;" >
 		<div class="container">
 			<?php if (usuarioEstaLogado()) {?>
-				<button class="btn btn-light dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<button class="btn btn-outline-light dropdown-toggle btn-sm  py-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Olá <?=usuarioLogado()?>!
 				</button>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -33,14 +33,14 @@
 	</button>
 	<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 		<ul class="nav navbar-nav">
-			<li class="nav-item ">
-				<a class="nav-link" href="aluno-formulario.php">Cadastro</a>
+			<li class="nav-item">
+				<a class="nav-link py-0" href="aluno-formulario.php">Cadastro</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="aluno-lista.php">Lista</a>
+				<a class="nav-link py-0" href="aluno-lista.php">Lista</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="aluno-busca.php">Busca</a>
+				<a class="nav-link py-0" href="aluno-busca.php">Busca</a>
 			</li>
 			<div class="d-flex flex-row-reverse bd-highlight">
 
