@@ -8,16 +8,7 @@ verificaUsuario();
 $alunos = listaAlunos($connection);
 
 if (array_key_exists("tipo", $_GET) && $_GET["tipo"]!="") {
-    switch ($_GET["tipo"]) {
-        case 0:
-            break;
-        case 1:
-             $alunos = pesquisaAlunoNome($connection, $_GET['valor']);
-            break;
-        case 2:
-             $alunos = pesquisaAlunoNome($connection, $_GET['valor']);
-            break;
-    }
+    $alunos = pesquisaAluno($connection, $_GET["valor"], $_GET["tipo"]);
 }
 
 ?> <h1>Alunos</h1><br> <?php
@@ -27,16 +18,16 @@ if (array_key_exists("removido", $_GET) && $_GET["removido"]==true) {?>
 }?>
 
 <div class="table-responsive">
-	<table class="table table-dark table-striped table-hover table-sm align-middle" style="font-size:14px;">
-		<thead>
-			<th class="bg-success" scope="col">#</th>
-			<th class="bg-success" scope="col">Nome do Aluno</th>
-			<th class="bg-success" scope="col">Nascimento</th>
-			<th class="bg-success" scope="col">Responsável</th>
-			<th class="bg-success" scope="col">Endereço</th>
-			<th class="bg-success" scope="col">Categoria</th>
-			<th class="bg-success" scope="col"></th>
-			<th class="bg-success" scope="col"></th>
+	<table class="table table-light table-striped table-hover align-middle" style="font-size:14px;">
+		<thead class="thead">
+			<th scope="col">#</th>
+			<th scope="col">Nome do Aluno</th>
+			<th scope="col">Nascimento</th>
+			<th scope="col">Responsável</th>
+			<th scope="col">Endereço</th>
+			<th scope="col">Categoria</th>
+			<th scope="col"></th>
+			<th scope="col"></th>
 		</thead>
 	<?php
     foreach ($alunos as $aluno):?>

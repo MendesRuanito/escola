@@ -34,8 +34,20 @@ function alteraAluno($connection, $id, $nome, $data, $responsavel, $sexo, $telef
     return mysqli_query($connection, $query);
 }
 
-function pesquisaAlunoNome($connection, $nome)
+function pesquisaAluno($connection, $valor, $tipo)
 {
-    $query = "select a.id, a.nome,a. dataNascimento, a.telefone, a.responsavel, a.endereco , c.nome as cNome from alunos as a join categorias as c on c.id = a.categorias_id where a.nome like '%$nome%';";
+    switch ($tipo) {
+    case 0:
+    $query = "select a.id, a.nome,a. dataNascimento, a.telefone, a.responsavel, a.endereco , c.nome as cNome from alunos as a join categorias as c on c.id = a.categorias_id where a.id = {$valor};";
+      break;
+
+    case 1:
+    $query = "select a.id, a.nome,a. dataNascimento, a.telefone, a.responsavel, a.endereco , c.nome as cNome from alunos as a join categorias as c on c.id = a.categorias_id where a.nome like '%{$valor}%';";
+      break;
+
+      case 2:
+      $query = "select a.id, a.nome,a. dataNascimento, a.telefone, a.responsavel, a.endereco , c.nome as cNome from alunos as a join categorias as c on c.id = a.categorias_id where cNome like '%{$valor}%';";
+        break;
+  }
     return mysqli_query($connection, $query);
 }

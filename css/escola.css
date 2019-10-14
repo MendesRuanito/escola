@@ -12,3 +12,13 @@ body {
 	max-width: 100%;
 	min-width: 100%
 }
+
+thead{
+  color: #FFFFFF;
+  background-color:#339966;
+}
+
+nav .navbar-nav li a{
+  size: 30px;
+  color: white !important;
+  }

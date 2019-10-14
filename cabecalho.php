@@ -18,7 +18,7 @@
 
 <body>
 <img class="banner" src="img/banner1360.png" alt="">
-<nav class="navbar navbar-inverse navbar-collapse sticky-top navbar-expand-sm navbar-dark nav-pills" style="background-color: #25744d;" >
+<nav class="navbar navbar-inverse navbar-collapse sticky-top navbar-expand-sm navbar-dark nav-pills" style="background-color: #339966;" >
 		<div class="container">
 			<?php if (usuarioEstaLogado()) {?>
 				<button class="btn btn-light dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
