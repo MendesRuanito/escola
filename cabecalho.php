@@ -5,12 +5,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="https://newtoncruzoficial.com/wp-content/uploads/2018/08/cropped-book-favicon-512-1.png" sizes="32x32">
-	<link href="css/escola.css" rel="stylesheet">
 	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="node_modules/ajax/lib/ajax.js"></script>
 	<script src="js/modal.js"></script>
+	<link href="css/escola.css" rel="stylesheet">
 
 	<?php require_once("logica-usuario.php");?>
 
