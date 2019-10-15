@@ -48,7 +48,7 @@
 								<a class="nav-link"></a>
 						</li>
         </ul>
-							<?php } ?>
+			<?php } ?>
     </div>
 
 	    <div class="navbar-brand order-3 py-0 ">
