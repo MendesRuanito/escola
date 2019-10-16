@@ -18,7 +18,7 @@
 
 <body>
 <img class="banner" src="img/banner1360.png" alt="">
-<nav class="navbar navbar-inverse navbar-collapse sticky-top navbar-expand-sm navbar-dark" style="background-color: #339966;" >
+<nav class="navbar navbar-inverse navbar-collapse navbar-expand-sm navbar-dark" style="background-color: #339966;" >
 			<div class="container">
 				<div class="navbar-collapse collapse order-0 dual-collapse2">
 						<ul class="navbar-nav">
