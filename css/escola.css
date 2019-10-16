@@ -16,3 +16,7 @@ thead{
 	.navbar-nav > .active  {
 background-color: green !important;
 }
+
+body{
+	min-height: 1000px;
+}
