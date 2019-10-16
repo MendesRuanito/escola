@@ -17,6 +17,22 @@ thead{
 background-color: green !important;
 }
 
-body{
-	min-height: 1000px;
+.menu{
+	background-color:#55bb88;
+	color: #ffffff;
+	border-radius: 70px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin: 10px;
+}
+
+div.menu:hover {
+  background-color: #0099ff;
+transition: 0.5s;
+}
+
+a:link {
+  text-decoration: none;
 }
