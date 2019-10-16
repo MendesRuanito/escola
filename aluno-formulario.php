@@ -22,7 +22,7 @@ $categorias = listaCategoria($connection);
 			<td><input class="form-control" type="date" name="data" /></td>
 		</tr>
 		<tr>
-			<td>Sexo</td>
+			<td>Sexo:</td>
 			<td>
 				<select name="sexo" class="form-control">
 					<option value="m">
@@ -35,11 +35,11 @@ $categorias = listaCategoria($connection);
 			</td>
 		</tr>
 		<tr>
-			<td>Nome do Responsável</td>
+			<td>Nome do Responsável:</td>
 			<td><input class="form-control" type="text" name="resp" /></td>
 		</tr>
 		<tr>
-			<td>Telefone</td>
+			<td>Telefone:</td>
 			<td><input class="form-control" type="tel" name="telefone" /></td>
 		</tr>
 		<tr>
@@ -63,3 +63,9 @@ $categorias = listaCategoria($connection);
 	</table>
 </form>
 <?php require_once("rodape.php"); ?>
+<script>
+		document.getElementById('inicio').classList.remove('active'); // Adiciona classe
+		document.getElementById('cad').classList.add('active'); // Adiciona classe
+		document.getElementById('pes').classList.remove('active'); // Adiciona classe
+		document.getElementById('lis').classList.remove('active'); // Adiciona classe
+</script>

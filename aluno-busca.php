@@ -16,7 +16,7 @@ verificaUsuario();
 			<td>
 				<select name="tipo" class="form-control">
 					<option value=0>
-						Id
+						Matrícula
 					</option>
 					<option value=1>
 						Nome
@@ -39,3 +39,9 @@ verificaUsuario();
 	</table>
 </form>
 <?php require_once("rodape.php") ?>
+<script>
+		document.getElementById('inicio').classList.remove('active'); // Adiciona classe
+		document.getElementById('cad').classList.remove('active'); // Adiciona classe
+		document.getElementById('pes').classList.add('active'); // Adiciona classe
+		document.getElementById('lis').classList.remove('active'); // Adiciona classe
+</script>

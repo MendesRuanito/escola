@@ -1,23 +1,18 @@
 h1, h2 {
-  text-align: center;
-  padding-top: 20px;
-}
-
-body {
-  min-height: 1000px;
+	text-align: center;
+	padding-top: 20px;
 }
 
 .banner {
 	max-width: 100%;
-	min-width: 100%
+	min-width: 100%;
 }
 
 thead{
-  color: #FFFFFF;
-  background-color:#339966;
+	color: #FFFFFF;
+	background-color:#339966;
 }
 
-nav .navbar-nav li a{
-  size: 30px;
-  color: white !important;
-  }
+	.navbar-nav > .active  {
+background-color: green !important;
+}

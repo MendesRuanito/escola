@@ -20,7 +20,7 @@ if (array_key_exists("removido", $_GET) && $_GET["removido"]==true) {?>
 <div class="table-responsive">
 	<table class="table table-light table-striped table-hover align-middle" style="font-size:14px;">
 		<thead class="thead">
-			<th scope="col">#</th>
+			<th scope="col">Matrícula</th>
 			<th scope="col">Nome do Aluno</th>
 			<th scope="col">Nascimento</th>
 			<th scope="col">Responsável</th>
@@ -63,3 +63,9 @@ if (array_key_exists("removido", $_GET) && $_GET["removido"]==true) {?>
 	</table>
 </div>
 <?php require_once("rodape.php"); ?>
+<script>
+		document.getElementById('inicio').classList.remove('active'); // Adiciona classe
+		document.getElementById('cad').classList.remove('active'); // Adiciona classe
+		document.getElementById('pes').classList.remove('active'); // Adiciona classe
+		document.getElementById('lis').classList.add('active'); // Adiciona classe
+</script>
