@@ -47,7 +47,6 @@ function pesquisaAluno($connection, $valor, $tipo)
 
       case 2:
       $query = "select a.id, a.nome,a. dataNascimento, a.telefone, a.responsavel, a.endereco , nomeCategoria from alunos as a join categorias as c on c.id = a.categorias_id where nomeCategoria like '%{$valor}%';";
-      echo $query;
         break;
   }
     return mysqli_query($connection, $query);
