@@ -1,5 +1,6 @@
 
 </div>
+</div>
 </body>
 <footer>
 	<nav class="navbar py-2" style="background-color: #339966; color: white" >

@@ -3,6 +3,11 @@ h1, h2 {
 	padding-top: 20px;
 }
 
+.principal{
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
 .banner {
 	max-width: 100%;
 	min-width: 100%;
@@ -20,6 +25,17 @@ background-color: green !important;
 
 .formlogin{
 	margin: 20px;
+}
+
+.login{
+	border: 5px solid #339966;
+	border-radius: 50px;
+	margin: auto;
+	width: 50%;
+	margin-bottom: 50px;
+	margin-top: 30px;
+	text-align: center;
+
 }
 
 .nav-item:hover{
@@ -84,4 +100,64 @@ a.link {
     height: 100%;
     width: 100%;
     text-decoration: none;
+}
+
+.form-wrapper {
+  max-width: 50%;
+  min-width: 300px;
+  padding: 10px 30px 30px 30px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 50px;
+
+  box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+}
+
+.form-group {
+  position:relative;
+
+  & + .form-group {
+    margin-top: 30px;
+  }
+}
+
+.form-login {
+  text-align: right;
+
+  & + .form-group {
+    margin-top: 30px;
+  }
+}
+
+.form-label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #999;
+  background-color: #fff;
+  z-index: 10;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+}
+
+.focused .form-label {
+  transform: translateY(-125%);
+  font-size: .75em;
+}
+
+.form-input {
+  position: relative;
+  padding: 12px 0px 5px 0;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 1px 0 0 #e5e5e5;
+  transition: box-shadow 150ms ease-out;
+
+  &:focus {
+    box-shadow: 0 2px 0 0 blue;
+  }
+}
+
+.form-input.filled {
+  box-shadow: 0 2px 0 0 lightgreen;
 }

@@ -39,20 +39,40 @@ if (usuarioEstaLogado()) {
 				</button>
 			</div>
 		<?php } ?>
-		<div class="login">
-<h2>Login</h2><br>
-<form class="formlogin" action="login.php" method="post">
-			<input class="form-control" placeholder="E-Mail" type="email" name="email"></td>
-			<br>
-			<input class="form-control" placeholder="Senha" type="password" name="senha"></td>
-			<br>
-			<td class="text-center"><button class="btn btn-primary">Login</button></td>
-</form>
+<div class="form-wrapper">
+  <form action="login.php" method="post" class="form">
+    <h2>Login</h2><br>
+    <div class="form-group">
+      <label class="form-label" name="email" for="first">Email</label>
+      <input id="first" autocomplete="off" class="form-input" name="email"  readonly onfocus="this.removeAttribute('readonly');"  type="email" />
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="last">Senha</label>
+      <input id="last" autocomplete="off" class="form-input" name="senha" type="password"  readonly onfocus="this.removeAttribute('readonly');"/>
+    </div>
+    <div class="form-login">
+      <br>
+      <button class="btn btn-outline-success">Login</button>
+    </div>
+  </form>
 </div>
 <?php
     }
 require_once("rodape.php"); ?>
 <script>
+$('input').focus(function(){
+  $(this).parents('.form-group').addClass('focused');
+});
+
+$('input').blur(function(){
+  var inputValue = $(this).val();
+  if ( inputValue == "" ) {
+    $(this).removeClass('filled');
+    $(this).parents('.form-group').removeClass('focused');
+  } else {
+    $(this).addClass('filled');
+  }
+})
 		document.getElementById('inicio').classList.add('active'); // Adiciona classe
 		document.getElementById('cad').classList.remove('active'); // Adiciona classe
 		document.getElementById('pes').classList.remove('active'); // Adiciona classe
