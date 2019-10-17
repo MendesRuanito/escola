@@ -7,7 +7,7 @@
 		<div class="container">
 		<div class="mx-auto order-0">
 			<div style="text-align:center">
- <div class="py-0">© 2019 By Ruan Mendes Marques </div>
+ <div class="py-0">2019 By Ruan Mendes Marques - QI</div>
 </div>
 			<div class="py-0" style="text-align:center">
 				 <a id="divlinkf" class="fb-ic" onclick="window.location='http://www.facebook.com';">
