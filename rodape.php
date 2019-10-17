@@ -1,37 +1,35 @@
 
 </div>
-</div>
 </body>
-<footer class="footer">
-<nav class="navbar navbar-inverse navbar-collapse navbar-expand-sm navbar-dark" style="background-color: #339966;" >
-			<div class="container">
-				<div class="navbar-collapse collapse w-100 dual-collapse2">
-						<ul class="navbar-nav">
-								<li class="nav-item">
-										<a class="nav-link py-0" style="color: white"> 2019 By Ruan Mendes Marques</a>
-								</li>
-						</ul>
-				</div>
-				<div class="navbar-collapse collapse dual-collapse2">
-						<ul class="navbar-nav">
-								<li class="navbar-brand py-0">
-										<img class="nav-link py-0" src="img/facebook.svg" style="margin-right: -20px;width:42px" alt="">
-								</li>
-								<li class="navbar-brand py-0">
-										<img class="nav-link py-0" src="img/whatsapp.svg" style="margin-right: -20px;width:42px"  alt="">
-								</li>
-								<li class="navbar-brand py-0">
-										<img class="nav-link py-0" src="img/linkedin.svg" style="margin-right: -20px;width:42px"  alt="">
-								</li>
-								<li class="navbar-brand py-0">
-										<img class="nav-link py-0" src="img/youtube.svg" style="margin-right: -20px;width:42px"  alt="">
-								</li>
-								<li class="navbar-brand py-0">
-										<img class="nav-link py-0" src="img/twitter.svg" style="width:42px" alt="">
-								</li>
-						</ul>
-				</div>
+<footer>
+	<nav class="navbar py-2" style="background-color: #339966; color: white" >
+		<div class="container">
+		<div class="mx-auto order-0">
+			<div style="text-align:center">
+ <div class="py-0">© 2019 By Ruan Mendes Marques </div>
 </div>
+			<div class="py-0" style="text-align:center">
+				 <a id="divlinkf" class="fb-ic" onclick="window.location='http://www.facebook.com';">
+					 <i class="fab fa-facebook-f fa-lg white-text mr-md-2 mr-2"> </i>
+				 </a>
+				 <a id="divlinkf" class="tw-ic" onclick="window.location='http://www.twitter.com';">
+					 <i class="fab fa-twitter fa-lg white-text mr-md-2 mr-2 "> </i>
+				 </a>
+				 <a id="divlinkf" class="gplus-ic" onclick="window.location='http://www.googleplus.com';">
+					 <i class="fab fa-google-plus-g fa-lg white-text mr-md-2 mr-2 "> </i>
+				 </a>
+				 <a  id="divlinkf"class="li-ic" onclick="window.location='http://www.linkedin.com';">
+					 <i class="fab fa-linkedin-in fa-lg white-text mr-md-2 mr-2"> </i>
+				 </a>
+				 <a  id="divlinkf"class="ins-ic" onclick="window.location='http://www.instagram.com';">
+					 <i class="fab fa-instagram fa-lg white-text mr-md-2 mr-2 "> </i>
+				 </a>
+				 <a id="divlinkf" class="pin-ic" onclick="window.location='http://www.pinterest.com';">
+					 <i class="fab fa-pinterest fa-lg white-text "> </i>
+				 </a>
+				 		 </div>
+	 </div>
+	</div>
 </nav>
 </footer>
 </html>
