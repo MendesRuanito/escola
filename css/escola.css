@@ -1,11 +1,28 @@
-h1, h2 {
+h2 {
+	text-align: center;
+	padding-top: 20px;}
+
+h3 {
 	text-align: center;
 	padding-top: 20px;
+	text-shadow: 2px 2px #4d7553
+}
+
+h1{
+	text-align: center;
+	padding-top: 20px;
+	text-shadow: 2px 2px #dddddd
+}
+
+h5{
+	size:1px;
+	margin-bottom: -1px;
+	text-shadow: 2px 2px #4d7553
 }
 
 .principal{
 	padding-top: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 20px
 }
 
 .banner {
@@ -38,15 +55,6 @@ background-color: green !important;
 
 }
 
-.nav-item:hover{
-	transition: 0.5s;
-	display: block;
-	background-color: rgba(255,255,255,30%);
-	border-radius: 10px;
-	padding: inherit;
-
-}
-
 .btn, .navbar-collapse{
 	transition: 0.5s;
 }
@@ -67,6 +75,7 @@ background-color: green !important;
 	padding-top: 40px;
 	padding-bottom: 30px;
 	color: white;
+	box-shadow: 10px 10px 0px rgba(50,50,93,.1),0 10px 10px rgba(0,0,0,.07);
 }
 
 /* Clear floats after the columns */
@@ -110,7 +119,7 @@ a.link {
   background-color: #ffffff;
   border-radius: 50px;
 
-  box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+  box-shadow: 10px 10px 0px rgba(50,50,93,.1),0 10px 10px rgba(0,0,0,.07);
 }
 
 .form-group {

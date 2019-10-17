@@ -24,16 +24,16 @@
 				<div class="navbar-collapse collapse order-0 dual-collapse2">
 						<ul class="navbar-nav">
 								<li class="nav-item ruan">
-										<a class="nav-link py-0" id="inicio" href="index.php">Inicio</a>
+										<a class="nav-link py-0" id="inicio" href="index.php"><h5>Inicio</h5></a>
 								</li>
 								<li class="nav-item ruan">
-										<a class="nav-link py-0" id="cad" href="aluno-formulario.php">Cadastro</a>
+										<a class="nav-link py-0" id="cad" href="aluno-formulario.php"><h5>Cadastro</h5></a>
 								</li>
 								<li class="nav-item ruan">
-										<a class="nav-link py-0" id="pes" href="aluno-busca.php">Pesquisa</a>
+										<a class="nav-link py-0" id="pes" href="aluno-busca.php"><h5>Pesquisa</h5></a>
 								</li>
 								<li class="nav-item ruan">
-										<a class="nav-link py-0" id="lis" href="aluno-lista.php">Lista</a>
+										<a class="nav-link py-0" id="lis" href="aluno-lista.php"><h5>Lista</h5></a>
 								</li>
 								<li class="nav-item ruan">
 										<a class="nav-link"></a>

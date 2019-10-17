@@ -2,7 +2,7 @@
 function listaAlunos($connection)
 {
     $alunos = array();
-    $resultado = mysqli_query($connection, "select a.id, a.nome,a. dataNascimento, a.telefone, a.responsavel, a.endereco , c.nome as cNome from alunos as a join categorias as c on c.id = a.categorias_id");
+    $resultado = mysqli_query($connection, "select a.id, a.nome,a. dataNascimento, a.telefone, a.responsavel, a.endereco , nomeCategoria from alunos as a join categorias as c on c.id = a.categorias_id");
     while ($aluno = mysqli_fetch_assoc($resultado)) {
         array_push($alunos, $aluno);
     }
@@ -38,15 +38,16 @@ function pesquisaAluno($connection, $valor, $tipo)
 {
     switch ($tipo) {
     case 0:
-    $query = "select a.id, a.nome,a. dataNascimento, a.telefone, a.responsavel, a.endereco , c.nome as cNome from alunos as a join categorias as c on c.id = a.categorias_id where a.id = {$valor};";
+    $query = "select a.id, a.nome,a. dataNascimento, a.telefone, a.responsavel, a.endereco , nomeCategoria from alunos as a join categorias as c on c.id = a.categorias_id where a.id = {$valor};";
       break;
 
     case 1:
-    $query = "select a.id, a.nome,a. dataNascimento, a.telefone, a.responsavel, a.endereco , c.nome as cNome from alunos as a join categorias as c on c.id = a.categorias_id where a.nome like '%{$valor}%';";
+    $query = "select a.id, a.nome,a. dataNascimento, a.telefone, a.responsavel, a.endereco , nomeCategoria from alunos as a join categorias as c on c.id = a.categorias_id where a.nome like '%{$valor}%';";
       break;
 
       case 2:
-      $query = "select a.id, a.nome,a. dataNascimento, a.telefone, a.responsavel, a.endereco , c.nome as cNome from alunos as a join categorias as c on c.id = a.categorias_id where cNome like '%{$valor}%';";
+      $query = "select a.id, a.nome,a. dataNascimento, a.telefone, a.responsavel, a.endereco , nomeCategoria from alunos as a join categorias as c on c.id = a.categorias_id where nomeCategoria like '%{$valor}%';";
+      echo $query;
         break;
   }
     return mysqli_query($connection, $query);

@@ -8,7 +8,7 @@ verificaUsuario();
 $alunos = listaAlunos($connection);
 
 if (array_key_exists("tipo", $_GET) && $_GET["tipo"]!="") {
-		$alunos = pesquisaAluno($connection, $_GET["valor"], $_GET["tipo"]);
+    $alunos = pesquisaAluno($connection, $_GET["valor"], $_GET["tipo"]);
 }
 
 ?> <h1>Alunos</h1><br> <?php
@@ -30,19 +30,19 @@ if (array_key_exists("removido", $_GET) && $_GET["removido"]==true) {?>
 			<th scope="col"></th>
 		</thead>
 	<?php
-		foreach ($alunos as $aluno):?>
+        foreach ($alunos as $aluno):?>
 		<tr>
 			<th scope="row" class="align-middle"><?=$aluno['id']?></td>
 			<td class="align-middle"><?=$aluno['nome']?></td>
 			<td class="align-middle">
 				<?php
-								$date = date_create($aluno['dataNascimento']);
-								echo date_format($date, 'd/m/Y');
-						?>
+                                $date = date_create($aluno['dataNascimento']);
+                                echo date_format($date, 'd/m/Y');
+                        ?>
 			</td>
 			<td class="align-middle"><?=$aluno['responsavel']?></td>
 			<td class="align-middle"><?=$aluno['endereco']?></td>
-			<td class="align-middle"><?=$aluno['cNome']?></td>
+			<td class="align-middle"><?=$aluno['nomeCategoria']?></td>
 			<td class="align-middle">
 				<form action="altera-aluno-formulario.php" method="post">
 					<input type="hidden" name="id" value="<?=$aluno['id']?>">
@@ -57,8 +57,8 @@ if (array_key_exists("removido", $_GET) && $_GET["removido"]==true) {?>
 			</td>
 		</tr>
 		<?php
-		endforeach
-		?>
+        endforeach
+        ?>
 
 	</table>
 </div>
