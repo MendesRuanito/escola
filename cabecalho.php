@@ -67,7 +67,7 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Deseja Sair?</h5>
+				<h2 class="modal-title" id="exampleModalLabel">Deseja Sair?</h2>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
 					<span aria-hidden="true">&times;</span>
 				</button>
