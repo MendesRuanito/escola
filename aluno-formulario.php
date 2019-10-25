@@ -1,15 +1,12 @@
-<?php require_once('cabecalho.php');
-require_once('conecta.php');
-require_once('banco-categoria.php');
-require_once('banco-aluno.php');
-require_once('logica-usuario.php');
-
-verificaUsuario();
-
-$categorias = listaCategoria($connection);
-
+<?php 
+	require_once('cabecalho.php');
+	require_once('conecta.php');
+	require_once('banco-categoria.php');
+	require_once('banco-aluno.php');
+	require_once('logica-usuario.php');
+	verificaUsuario();
+	$categorias = listaCategoria($connection);
 ?>
-
 <form action="cadastra-aluno.php" method="post">
 	<table class="table">
 		<h1>Cadastro de Aluno</h1>
@@ -64,8 +61,8 @@ $categorias = listaCategoria($connection);
 </form>
 <?php require_once('rodape.php'); ?>
 <script>
-		document.getElementById('inicio').classList.remove('active');
-		document.getElementById('cad').classList.add('active');
-		document.getElementById('pes').classList.remove('active');
-		document.getElementById('lis').classList.remove('active');
+	document.getElementById('inicio').classList.remove('active');
+	document.getElementById('cad').classList.add('active');
+	document.getElementById('pes').classList.remove('active');
+	document.getElementById('lis').classList.remove('active');
 </script>

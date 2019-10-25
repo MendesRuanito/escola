@@ -1,14 +1,12 @@
-<?php require_once("cabecalho.php");
-require_once("conecta.php");
-require_once("banco-categoria.php");
-require_once("banco-aluno.php");
-require_once("logica-usuario.php");
-
-verificaUsuario();
-
+<?php 
+	require_once("cabecalho.php");
+	require_once("conecta.php");
+	require_once("banco-categoria.php");
+	require_once("banco-aluno.php");
+	require_once("logica-usuario.php");
+	verificaUsuario();
 ?>
 <h1>Busca</h1>
-
 <form action="aluno-lista.php" method="get">
 	<table class="table">
 		<tr>
@@ -29,7 +27,7 @@ verificaUsuario();
 		</tr>
 		<tr>
 			<td>Valor:</td>
-			<td><input class="form-control" type="text" name="valor" /></td>
+			<td><input class="form-control" type="text" name="valor"/></td>
 		</tr>
 		<tr>
 			<td class="align-center">
@@ -40,8 +38,8 @@ verificaUsuario();
 </form>
 <?php require_once("rodape.php") ?>
 <script>
-		document.getElementById('inicio').classList.remove('active'); // Adiciona classe
-		document.getElementById('cad').classList.remove('active'); // Adiciona classe
-		document.getElementById('pes').classList.add('active'); // Adiciona classe
-		document.getElementById('lis').classList.remove('active'); // Adiciona classe
+	document.getElementById('inicio').classList.remove('active');
+	document.getElementById('cad').classList.remove('active');
+	document.getElementById('pes').classList.add('active');
+	document.getElementById('lis').classList.remove('active');
 </script>

@@ -1,32 +1,32 @@
 <?php
+	session_start();
+	function verificaUsuario()
+	{
+		if (!usuarioEstaLogado()) {
+			//header("Location: index.php?login=1");
+			echo "<script>location.href='index.php?login=1';</script>";
+			exit;
+		}
+	}
 
-session_start();
+	function usuarioEstaLogado()
+	{
+		return isset($_SESSION["usuario_logado"]);
+	}
 
-function verificaUsuario()
-{
-    if (!usuarioEstaLogado()) {
-		echo "<script>location.href='index.php?login=1';</script>";
-        exit;
-    }
-}
+	function usuarioLogado()
+	{
+		return $_SESSION["usuario_logado"];
+	}
 
-function usuarioEstaLogado()
-{
-    return isset($_SESSION["usuario_logado"]);
-}
+	function logaUsuario($email)
+	{
+		return $_SESSION["usuario_logado"] = $email;
+	}
 
-function usuarioLogado()
-{
-    return $_SESSION["usuario_logado"];
-}
-
-function logaUsuario($email)
-{
-    return $_SESSION["usuario_logado"] = $email;
-}
-
-function logout()
-{
-    session_destroy();
-    session_start();
-}
+	function logout()
+	{
+		session_destroy();
+		session_start();
+	}
+?>

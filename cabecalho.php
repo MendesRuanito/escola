@@ -12,72 +12,67 @@
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="node_modules/ajax/lib/ajax.js"></script>
 	<script src="js/modal.js"></script>
-
 	<?php require_once("logica-usuario.php");?>
-
 </head>
-
 <body>
-<img class="banner" src="img/banner1360.png" alt="">
-<nav class="navbar navbar-collapse navbar-expand-sm navbar-dark" style="background-color: #339966;" >
-			<div class="container">
-				<div class="navbar-collapse collapse order-0 dual-collapse2">
-						<ul class="navbar-nav">
-								<li class="nav-item ruan">
-										<a class="nav-link py-0" id="inicio" href="index.php"><h5>Inicio</h5></a>
-								</li>
-								<li class="nav-item ruan">
-										<a class="nav-link py-0" id="cad" href="aluno-formulario.php"><h5>Cadastro</h5></a>
-								</li>
-								<li class="nav-item ruan">
-										<a class="nav-link py-0" id="pes" href="aluno-busca.php"><h5>Pesquisa</h5></a>
-								</li>
-								<li class="nav-item ruan">
-										<a class="nav-link py-0" id="lis" href="aluno-lista.php"><h5>Lista</h5></a>
-								</li>
-								<li class="nav-item ruan">
-										<a class="nav-link"></a>
-								</li>
-						</ul>
-				</div>
-				<div class="navbar-collapse collapse w-100 order-1 dual-collapse2">
-			<?php if (usuarioEstaLogado()) {?>
-				<ul class="navbar-nav ml-auto">
+	<img class="banner" src="img/banner1360.png" alt="">
+	<nav class="navbar navbar-collapse navbar-expand-sm navbar-dark" style="background-color: #339966;" >
+		<div class="container">
+			<div class="navbar-collapse collapse order-0 dual-collapse2">
+				<ul class="navbar-nav">
+					<li class="nav-item ruan">
+						<a class="nav-link py-0" id="inicio" href="index.php"><h5>Inicio</h5></a>
+					</li>
+					<li class="nav-item ruan">
+						<a class="nav-link py-0" id="cad" href="aluno-formulario.php"><h5>Cadastro</h5></a>
+					</li>
+					<li class="nav-item ruan">
+						<a class="nav-link py-0" id="pes" href="aluno-busca.php"><h5>Pesquisa</h5></a>
+					</li>
+					<li class="nav-item ruan">
+						<a class="nav-link py-0" id="lis" href="aluno-lista.php"><h5>Lista</h5></a>
+					</li>
+					<li class="nav-item ruan">
+						<a class="nav-link"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="navbar-collapse collapse w-100 order-1 dual-collapse2">
+				<?php if (usuarioEstaLogado()) {?>
+					<ul class="navbar-nav ml-auto">
 						<li>
 							<button type="button" class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#modalLogoff" >
 								Olá <?=usuarioLogado()?>!
 							</button>
 						</li>
 						<li class="nav-item">
-								<a class="nav-link"></a>
+							<a class="nav-link"></a>
 						</li>
-				</ul>
-			<?php } ?>
-		</div>
-
+					</ul>
+				<?php } ?>
+			</div>
 			<div class="navbar-brand order-3 py-0 ">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-</div>
-</nav>
-
-
-<div class="modal fade" id="modalLogoff" tabindex="-1" role="dialog" aria-labelledby="ModalLogoff" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h2 class="modal-title" id="ModalLogoff">Deseja Sair?</h2>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-					<span aria-hidden="true">&times;</span>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+					<span class="navbar-toggler-icon"></span>
 				</button>
 			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
-				<a role="button" class="btn btn-primary" href="logout.php">Sim</a>
+		</div>
+	</nav>
+	<div class="modal fade" id="modalLogoff" tabindex="-1" role="dialog" aria-labelledby="ModalLogoff" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title" id="ModalLogoff">Deseja Sair?</h2>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+					<a role="button" class="btn btn-primary" href="logout.php">Sim</a>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-	<div class="container">
-		<div class="principal">
+		<div class="container">
+			<div class="principal">

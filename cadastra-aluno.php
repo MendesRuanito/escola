@@ -11,10 +11,10 @@ $endereco = $_POST["endereco"];
 $categoria = $_POST["categoria"];
 
 
-if (cadastraAluno($connection, $nome, $data, $resp, $sexo, $telefone, $endereco, $categoria)) {
-    ?><p class="alert alert-success">Aluno cadastrado!</p><?php
-} else {
-        $msg = mysqli_error($connection); ?><p class="alert alert-danger">Erro no cadastro!<br>Erro: <?= $msg?></p><?php
-    }
+if (cadastraAluno($connection, $nome, $data, $resp, $sexo, $telefone, $endereco, $categoria)) { ?>
+	<p class="alert alert-success">Aluno cadastrado!</p>
+<?php } else {
+    $msg = mysqli_error($connection); ?><p class="alert alert-danger">Erro no cadastro!<br>Erro: <?= $msg?></p>
+<?php }
 mysqli_close($connection);
 require_once("rodape.php"); ?>

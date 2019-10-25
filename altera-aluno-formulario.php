@@ -1,16 +1,15 @@
-<?php require_once('cabecalho.php');
-require_once('conecta.php');
-require_once('banco-categoria.php');
-require_once('banco-aluno.php');
-
-$id = $_POST['id'];
-$aluno = buscaAluno($connection, $id);
-$categorias = listaCategoria($connection); ?>
-
+<?php 
+	require_once('cabecalho.php');
+	require_once('conecta.php');
+	require_once('banco-categoria.php');
+	require_once('banco-aluno.php');
+	$id = $_POST['id'];
+	$aluno = buscaAluno($connection, $id);
+	$categorias = listaCategoria($connection);
+ ?>
 <h1>Alteração de Dados</h1>
-
 <form action="altera-aluno.php" method="post">
-	<input class="form-control" hidden name="id" value="<?=$aluno["id"]?>" />
+	<input class="form-control" hidden name="id" value="<?=$aluno["id"]?>"></input>
 	<table class="table">
 		<tr>
 			<td>Nome:</td>
@@ -51,6 +50,7 @@ $categorias = listaCategoria($connection); ?>
 					</option>
 				</select>
 			</td>
+		</tr>
 		<tr>
 			<td>Endereço</td>
 			<td><input class="form-control" type="text" name="endereco" value="<?=$aluno['endereco']?>" /></td>
@@ -62,5 +62,4 @@ $categorias = listaCategoria($connection); ?>
 		</tr>
 	</table>
 </form>
-
 <?php require_once('rodape.php'); ?>
