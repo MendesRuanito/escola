@@ -1,7 +1,7 @@
-<?php require_once("cabecalho.php");
-require_once("conecta.php");
-require_once("banco-categoria.php");
-require_once("banco-aluno.php");
+<?php require_once('cabecalho.php');
+require_once('conecta.php');
+require_once('banco-categoria.php');
+require_once('banco-aluno.php');
 
 $id = $_POST['id'];
 $aluno = buscaAluno($connection, $id);
@@ -46,7 +46,7 @@ $categorias = listaCategoria($connection); ?>
 			<td>
 				<select name="categoria" class="form-control">
 					<?php foreach ($categorias as $categoria):?>
-					<option value="<?=$categoria['id']?>"><?=$categoria['nome']?>
+					<option value="<?=$categoria['id']?>"><?=$categoria['nomeCategoria']?>
 						<?php endforeach ?>
 					</option>
 				</select>
@@ -63,4 +63,4 @@ $categorias = listaCategoria($connection); ?>
 	</table>
 </form>
 
-<?php require_once("rodape.php"); ?>
+<?php require_once('rodape.php'); ?>

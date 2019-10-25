@@ -5,8 +5,8 @@ session_start();
 function verificaUsuario()
 {
     if (!usuarioEstaLogado()) {
-        header("Location: index.php?login=1");
-        die();
+		echo "<script>location.href='index.php?login=1';</script>";
+        exit;
     }
 }
 

@@ -1,8 +1,8 @@
-<?php require_once("cabecalho.php");
-require_once("conecta.php");
-require_once("banco-categoria.php");
-require_once("banco-aluno.php");
-require_once("logica-usuario.php");
+<?php require_once('cabecalho.php');
+require_once('conecta.php');
+require_once('banco-categoria.php');
+require_once('banco-aluno.php');
+require_once('logica-usuario.php');
 
 verificaUsuario();
 
@@ -47,7 +47,7 @@ $categorias = listaCategoria($connection);
 			<td>
 				<select name="categoria" class="form-control">
 					<?php foreach ($categorias as $categoria):?>
-						<option value="<?=$categoria['id']?>"><?=$categoria['nome']?>
+						<option value="<?=$categoria['id']?>"><?=$categoria['nomeCategoria']?>
 					<?php endforeach ?>
 					</option>
 				</select>
@@ -62,10 +62,10 @@ $categorias = listaCategoria($connection);
 		</tr>
 	</table>
 </form>
-<?php require_once("rodape.php"); ?>
+<?php require_once('rodape.php'); ?>
 <script>
-		document.getElementById('inicio').classList.remove('active'); // Adiciona classe
-		document.getElementById('cad').classList.add('active'); // Adiciona classe
-		document.getElementById('pes').classList.remove('active'); // Adiciona classe
-		document.getElementById('lis').classList.remove('active'); // Adiciona classe
+		document.getElementById('inicio').classList.remove('active');
+		document.getElementById('cad').classList.add('active');
+		document.getElementById('pes').classList.remove('active');
+		document.getElementById('lis').classList.remove('active');
 </script>

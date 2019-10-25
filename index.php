@@ -1,5 +1,5 @@
-<?php require_once("cabecalho.php");
-require_once("logica-usuario.php");
+<?php require_once('cabecalho.php');
+require_once('logica-usuario.php');
 ?>
 
 <h1>Bem Vindo!</h1>
@@ -9,15 +9,15 @@ if (usuarioEstaLogado()) {
     ?>
 	<div class="row">
 	  <div  id="divlink" class="column" onclick="window.location='aluno-formulario.php';">
-			<img src="img/Index/computer.svg" width="128px" alt="...">
+			<img src="img/Index/computer.svg" width="128px">
 	    <h3>Cadastro</h3>
 	  </div>
 	  <div id="divlink" class="column" onclick="window.location='aluno-lista.php';">
-	  	<img src="img/Index/research-1.svg" width="128px" alt="...">
+	  	<img src="img/Index/research-1.svg" width="128px">
 			<h3>Lista</h3>
 	  </div>
 	  <div id="divlink" class="column" onclick="window.location='aluno-busca.php';">
-	  	<img src="img/Index/research.svg" width="128px" alt="...">
+	  	<img src="img/Index/research.svg" width="128px">
 			<h3>Pesquisa</h3>
 	  </div>
 	</div>
@@ -58,7 +58,7 @@ if (usuarioEstaLogado()) {
 </div>
 <?php
     }
-require_once("rodape.php"); ?>
+require_once('rodape.php'); ?>
 <script>
 $('input').focus(function(){
   $(this).parents('.form-group').addClass('focused');

@@ -1,6 +1,6 @@
-<?php require_once("cabecalho.php");
-require_once("conecta.php");
-require_once("banco-aluno.php");
+<?php require_once('cabecalho.php');
+require_once('conecta.php');
+require_once('banco-aluno.php');
 
 $id = $_POST["id"];
 $nome = $_POST["nome"];
@@ -17,4 +17,4 @@ if (alteraAluno($connection, $id, $nome, $data, $resp, $sexo, $telefone, $endere
         $msg = mysqli_error($connection); ?><p class="alert alert-danger">Erro de alteração!<br>Erro: <?= $msg?></p><?php
     }
 mysqli_close($connection);
-require_once("rodape.php"); ?>
+require_once('rodape.php'); ?>

@@ -44,7 +44,7 @@
 			<?php if (usuarioEstaLogado()) {?>
 				<ul class="navbar-nav ml-auto">
 						<li>
-							<button type="button" class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#modalExemplo" >
+							<button type="button" class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#modalLogoff" >
 								Olá <?=usuarioLogado()?>!
 							</button>
 						</li>
@@ -63,11 +63,11 @@
 </nav>
 
 
-<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalLogoff" tabindex="-1" role="dialog" aria-labelledby="ModalLogoff" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h2 class="modal-title" id="exampleModalLabel">Deseja Sair?</h2>
+				<h2 class="modal-title" id="ModalLogoff">Deseja Sair?</h2>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
 					<span aria-hidden="true">&times;</span>
 				</button>
